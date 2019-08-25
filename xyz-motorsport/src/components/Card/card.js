@@ -24,7 +24,8 @@ const Card = (props) => {
 
     const imgUrl = require(`../../img/${props.picid}.jpg`);
 
-    return ( <div className="rounded overflow-hidden shadow-lg hover:shadow-xl float-left content-start m-3 flex flex-wrap mb-4 h-auto lg:w-1/8 md:w-1/6 sm:w-full">
+    return ( 
+    <div className="rounded overflow-hidden shadow-lg hover:shadow-xl float-left content-start m-3 flex flex-wrap mb-4 h-auto xl:w-1/5 lg:w-4/12 md:w-2/6 sm:w-full">
     <img className="w-full h-48 object-cover" src={imgUrl} alt="Example"></img>
     <div className="px-6 py-4">
     <span className="text-sm text-red-500">{ props.brand } &bull; </span>

@@ -46,7 +46,7 @@ class App extends React.Component{
         return(
         <CartProvider>
         <div id="App" >  
-        <Toolbar drawerClickHandler = {this.drawerToggleHandler}/>  
+        <Toolbar drawerClickHandler = {this.drawerToggleHandler}/> 
         <Sidedrawer drawerClickHandler={this.drawerToggleHandler}/>
         <div className="z-0 inline-block relative w-64 m-6">
                     <select value = {this.state.value} onChange={this.changeHandler} className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
