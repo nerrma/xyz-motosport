@@ -6,6 +6,7 @@ import Toolbar from './components/Toolbar/Toolbar';
 import Sidedrawer from './components/Sidedrawer/Sidedrawer';
 import "./components/Sidedrawer/Sidedrawer.css";
 import { CartProvider } from './components/Cart/CartContext';
+import "./about.css";
 
 class App extends React.Component{
     state = { parts: [], drawerVisible: false, value: null, featParts: []}
@@ -46,8 +47,14 @@ class App extends React.Component{
         return(
         <CartProvider>
         <div id="App" >  
-        <Toolbar drawerClickHandler = {this.drawerToggleHandler}/>  
+        <Toolbar drawerClickHandler = {this.drawerToggleHandler}/> 
         <Sidedrawer drawerClickHandler={this.drawerToggleHandler}/>
+        <div id="about" className="z-0 relative text-center p-8">
+            <div className = "mt-32">
+             <span class="font-extrabold text-4xl tracking-tight text-black shadow-xl rounded p-4 bg-gray-200"> <span class="tracking-wide italic text-red-700">XYZ</span> Motorsport</span>
+             <p className="text-justify mt-6 shadow-xl rounded p-4 bg-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel tempor nisi. Nullam tristique eleifend augue a aliquam. Vivamus sed volutpat felis. Fusce sodales id lacus id tempus. Ut accumsan metus leo, at mattis felis facilisis sed. Vestibulum pharetra erat efficitur sapien semper rhoncus. Etiam commodo massa ac imperdiet maximus. Cras semper bibendum nulla in pharetra. Quisque interdum accumsan nibh in scelerisque. Pellentesque vehicula lectus at mi volutpat hendrerit. Vestibulum non nulla elit. Nam ac mattis nulla, et accumsan leo. </p>
+            </div>
+        </div>
         <div className="z-0 inline-block relative w-64 m-6">
                     <select value = {this.state.value} onChange={this.changeHandler} className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option value="default">Featured</option>
