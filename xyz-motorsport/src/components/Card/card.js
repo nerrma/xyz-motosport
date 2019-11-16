@@ -31,7 +31,7 @@ const Card = (props) => {
     <span className="text-sm text-red-500">{ props.brand } &bull; </span>
     <h2 className="font-bold text-xl mb-2">{ props.name}</h2>
     <p className="">${ props.price}</p>
-    <button onClick={show} className="bg-white hover:bg-red-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow absolute top-full">View Info</button>
+    <button onClick={show} className="bg-white hover:bg-red-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow inline-block top-full mt-3">View Info</button>
     </div>
     <Rodal visible={visible} onClose={hide}>
                 <div>

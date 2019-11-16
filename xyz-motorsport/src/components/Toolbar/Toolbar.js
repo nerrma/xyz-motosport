@@ -4,7 +4,7 @@ import "../../index.css";
 class Toolbar extends Component {
 
     render() { 
-        return (  <nav class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full shadow z-50">
+        return (  <nav class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full shadow z-50 top-0">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <span class="font-semibold text-xl tracking-tight text-black"> <span class="tracking-wide italic text-red-700">XYZ</span> Motorsport</span>
         </div>
