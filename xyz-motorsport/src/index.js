@@ -51,7 +51,7 @@ class App extends React.Component{
         <Sidedrawer drawerClickHandler={this.drawerToggleHandler}/>
         <div id="about" className="z-0 relative text-center p-8">
             <div className = "mt-32">
-             <span class="font-extrabold text-4xl tracking-tight text-black shadow-xl rounded p-4 bg-gray-200"> <span class="tracking-wide italic text-red-700">XYZ</span> Motorsport</span>
+             <span class="font-extrabold text-4xl tracking-tight text-black shadow-xl rounded p-1 md:p-4 lg:p-4 bg-gray-200"> <span class="tracking-wide italic text-red-700">XYZ</span> Motorsport</span>
              <p className="text-justify mt-6 shadow-xl rounded p-4 bg-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel tempor nisi. Nullam tristique eleifend augue a aliquam. Vivamus sed volutpat felis. Fusce sodales id lacus id tempus. Ut accumsan metus leo, at mattis felis facilisis sed. Vestibulum pharetra erat efficitur sapien semper rhoncus. Etiam commodo massa ac imperdiet maximus. Cras semper bibendum nulla in pharetra. Quisque interdum accumsan nibh in scelerisque. Pellentesque vehicula lectus at mi volutpat hendrerit. Vestibulum non nulla elit. Nam ac mattis nulla, et accumsan leo. </p>
             </div>
         </div>
