@@ -1,7 +1,17 @@
 #Sidedrawer{
     transition: margin .5s;
     margin: 0 0 0 100%;
+    width: 33.333%;
  }
  #Sidedrawer.open {
    margin: 0 0 0 66.66666%;
  }
+
+ @media screen and (max-width: 900px) {
+  #Sidedrawer{
+    width: 100%;
+ }
+  #Sidedrawer.open {
+    margin: 0 0 0 0;
+  }
+}
